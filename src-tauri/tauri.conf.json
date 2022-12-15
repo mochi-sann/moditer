@@ -28,7 +28,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.mochi33.editer.mochi",
       "longDescription": "",
       "macOS": {
         "entitlements": null,

@@ -7,16 +7,19 @@ specifiers:
   "@types/react": ^18.0.15
   "@types/react-dom": ^18.0.6
   "@vitejs/plugin-react": ^3.0.0
+  destyle.css: ^4.0.0
   npm-run-all: ^4.1.5
   prettier: 2.8.1
   react: ^18.2.0
   react-dom: ^18.2.0
+  sass: ^1.56.2
   typed-css-modules: ^0.7.2
   typescript: ^4.6.4
   vite: ^4.0.0
 
 dependencies:
   "@tauri-apps/api": 1.2.0
+  destyle.css: 4.0.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
@@ -28,9 +31,10 @@ devDependencies:
   "@vitejs/plugin-react": 3.0.0_vite@4.0.1
   npm-run-all: 4.1.5
   prettier: 2.8.1
+  sass: 1.56.2
   typed-css-modules: 0.7.2
   typescript: 4.9.4
-  vite: 4.0.1_@types+node@18.11.14
+  vite: 4.0.1_nkf6vitvxbrj2nkewbtva4gfee
 
 packages:
   /@ampproject/remapping/2.2.0:
@@ -853,7 +857,7 @@ packages:
       "@babel/plugin-transform-react-jsx-source": 7.19.6_@babel+core@7.20.5
       magic-string: 0.27.0
       react-refresh: 0.14.0
-      vite: 4.0.1_@types+node@18.11.14
+      vite: 4.0.1_nkf6vitvxbrj2nkewbtva4gfee
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1195,6 +1199,13 @@ packages:
       has-property-descriptors: 1.0.0
       object-keys: 1.1.1
     dev: true
+
+  /destyle.css/4.0.0:
+    resolution:
+      {
+        integrity: sha512-yE2SpDRZdqfEZRkYSIxSWSuh4Higsm01VinAWC3hny9DDV+NjBARpCEqf6TLDTWka1I7pu4bDJ68aF1WjLPKUw==,
+      }
+    dev: false
 
   /electron-to-chromium/1.4.284:
     resolution:
@@ -1562,6 +1573,13 @@ packages:
     resolution:
       {
         integrity: sha512-chIaY3Vh2mh2Q3RGXttaDIzeiPvaVXJ+C4DAh/w3c37SKZ/U6PGMmuicR2EQQp9bKG8zLMCl7I+PtIoOOPp8Gg==,
+      }
+    dev: true
+
+  /immutable/4.1.0:
+    resolution:
+      {
+        integrity: sha512-oNkuqVTA8jqG1Q6c+UglTOD1xhC1BtjKI7XkCXRkZHrN5m18/XsnUp8Q89GkQO/z+0WjonSvl0FLhDYftp46nQ==,
       }
     dev: true
 
@@ -2295,6 +2313,19 @@ packages:
       is-regex: 1.1.4
     dev: true
 
+  /sass/1.56.2:
+    resolution:
+      {
+        integrity: sha512-ciEJhnyCRwzlBCB+h5cCPM6ie/6f8HrhZMQOf5vlU60Y1bI1rx5Zb0vlDZvaycHsg/MqFfF1Eq2eokAa32iw8w==,
+      }
+    engines: { node: ">=12.0.0" }
+    hasBin: true
+    dependencies:
+      chokidar: 3.5.3
+      immutable: 4.1.0
+      source-map-js: 1.0.2
+    dev: true
+
   /scheduler/0.23.0:
     resolution:
       {
@@ -2623,7 +2654,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite/4.0.1_@types+node@18.11.14:
+  /vite/4.0.1_nkf6vitvxbrj2nkewbtva4gfee:
     resolution:
       {
         integrity: sha512-kZQPzbDau35iWOhy3CpkrRC7It+HIHtulAzBhMqzGHKRf/4+vmh8rPDDdv98SWQrFWo6//3ozwsRmwQIPZsK9g==,
@@ -2656,6 +2687,7 @@ packages:
       postcss: 8.4.20
       resolve: 1.22.1
       rollup: 3.7.4
+      sass: 1.56.2
     optionalDependencies:
       fsevents: 2.3.2
     dev: true

@@ -1,0 +1,19 @@
+.button {
+  padding: 4px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #3b82f6;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 0.25rem;
+
+  :hover {
+    background-color: #1d4ed8;
+  }
+}
+
+.fullwidth {
+  width: 100%;
+}
