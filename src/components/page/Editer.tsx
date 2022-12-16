@@ -9,16 +9,8 @@ export type EditerProps = {};
 
 export const Editer: React.FC<EditerProps> = (props) => {
   const [greetMsg, setGreetMsg] = useState("");
-  const [name, setName] = useState("");
+  const [filePath, setfilePath] = useState("");
 
-  async function greet() {
-    // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
-    setGreetMsg(await invoke("greet", { name }));
-  }
-  async function RustSimpleCommand() {
-    // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
-    await invoke("simple_command", { value: name });
-  }
   function openDialog() {
     open({
       multiple: false,
@@ -27,6 +19,7 @@ export const Editer: React.FC<EditerProps> = (props) => {
       const contents = await readTextFile(files as string, {});
       console.log(contents);
       setGreetMsg(contents);
+      setfilePath(files as string);
       console.log(files);
     });
   }

@@ -8,7 +8,7 @@
     "preview": "vite preview",
     "tauri": "tauri",
     "dev": "run-p dev:*",
-    "dev:css-typed": "tcm -w -p 'src/**/*.(scss|css)' .",
+    "dev:css-typed": "tcm -c -w -p 'src/**/*.(scss|css)' .",
     "dev:vite": "vite",
     "format": "prettier --write . ",
     "prepare": "husky install"
